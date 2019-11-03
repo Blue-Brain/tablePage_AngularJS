@@ -1,5 +1,6 @@
-angular.module("mainCtrl",[])
-.controller("firstCtrl", function($scope){
+var app = angular.module("app", ['components']);
+
+app.controller("firstCtrl", function($scope){
     $scope.addNew = function () {
         if ($scope.tempInput) { 
             $scope.tasksArray.push($scope.tempInput);
