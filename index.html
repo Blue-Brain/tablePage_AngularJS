@@ -3,16 +3,16 @@
     <head>
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
         <title>My APP</title>
     </head>
-    <body ng-controller="appCtrl">
-        <h1>Добавь задание</h1>
+    <body ng-controller="appCtrl" class="container">
         <main></main>
 
-    <script src="/app/directives/main.directive.js"></script>
-    <script src="/app/controllers/mainCtrl.component.js"></script>
-   
-    <script src="app.js"></script>
+        <script src="/app/components/header/header.drct.js"></script>
+        <script src="/app/components/header/header.ctrl.js"></script>
+    
+        <script src="app.js"></script>
     </body>
 </html>

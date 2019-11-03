@@ -5,7 +5,7 @@ dir.directive ('main', function () {
         restrict: 'E',
         transclude: true,
         controller: 'firstCtrl',
-        templateUrl: 'app/views/main.view.html',
+        templateUrl: 'app/components/header/header.view.html',
         replace: true
     }
 })
