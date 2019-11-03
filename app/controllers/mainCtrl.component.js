@@ -1,4 +1,4 @@
-var app = angular.module('app.core');
+var app = angular.module('app.header');
 
 app.controller("appCtrl", function($scope, $http) {
     console.log('scope Ctrl: ', $scope)
