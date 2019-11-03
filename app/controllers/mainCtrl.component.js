@@ -1,4 +1,15 @@
-var app = angular.module("app", ['components']);
+var app = angular.module('app.core');
+
+app.controller("appCtrl", function($scope, $http) {
+    console.log('scope Ctrl: ', $scope)
+    
+    $scope.tempInput="TEST_TASK";
+    $http.get('array.json')
+        .success(function (data) {
+            $scope.tasksArray = data.tasks;
+            console.log("Data success download", $scope.tasksArray)
+        });
+})
 
 app.controller("firstCtrl", function($scope){
     $scope.addNew = function () {
@@ -15,4 +26,4 @@ app.controller("firstCtrl", function($scope){
         $scope.tasksArray.splice(index, 1) 
         console.log (index);
     }
-})
+});

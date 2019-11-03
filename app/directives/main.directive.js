@@ -1,4 +1,4 @@
-var dir = angular.module('components', []);
+var dir = angular.module('app.core', []);
 
 dir.directive ('main', function () {
     return {
