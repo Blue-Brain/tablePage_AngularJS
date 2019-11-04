@@ -6,11 +6,27 @@ th {
     font-size: 14px;
 
 }
-
+.textureNav {
+    background-image: url('http://api.thumbr.it/whitenoise-2000x100.png?background=d1d1d1ff&noise=626262&density=2&opacity=84');
+    background-color: #d1d1d1;
+}
+.line-brick>td {
+    background-image: url("http://api.thumbr.it/whitenoise-100x20.png?background=d1a671ff&noise=626262&density=16&opacity=84");
+    background-color: #d1a671;
+    border: #b3b3b3 solid 3px;
+    height: 25px;
+}
+.table {
+    margin-bottom: 0px;
+}
+.btn {
+    background-image: url("http://api.thumbr.it/whitenoise-100x20.png?background=d1a671ff&noise=626262&density=16&opacity=84");
+    border: #b3b3b3 solid 3px;
+    border-radius: 20%;
+}
 @media (max-width: 1470px) {
     tr {
         font-size: 10px;
-       
     }
     th {
         font-size: 12px;

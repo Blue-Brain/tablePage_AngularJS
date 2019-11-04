@@ -20,6 +20,10 @@ dir.directive('datatable', function() {
                         return `${newDate.getDate()}.${newDate.getMonth()+1}.${newDate.getFullYear()}`
                     } else return '';
                 }
+                $scope.responsible = function(data) {
+                    if (data) return "Есть"; 
+                    else return "Нет"
+                }
             },
         templateUrl: 'app/components/table/table.view.html',
         replace: true
