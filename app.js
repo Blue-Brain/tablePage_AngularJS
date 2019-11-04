@@ -1,2 +1,2 @@
 'use strict';
-angular.module("app", ['app.header']);
+angular.module("app", ['app.header','app.table']);

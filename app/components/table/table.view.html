@@ -1,0 +1,40 @@
+  <table class="table table-striped table-sm mt-5">
+    <thead class="thead-dark">
+      <tr class="">
+        <th class="align-middle text-center">Аккаунт</th>
+        <th class="align-middle text-center">Номер зоны</th>
+        <th class="align-middle text-center">Дата А</th>
+        <th class="align-middle text-center">Дата Р</th>
+        <th class="align-middle text-center">Документ А</th>
+        <th class="align-middle text-center">Документ Р</th>
+        <th class="align-middle text-center">Дом</th>
+        <th class="align-middle text-center">Ответс твенный</th>
+        <th class="align-middle text-center">Месяц А</th>
+        <th class="align-middle text-center">Месяц Р</th>
+        <th class="align-middle text-center">Сальдо начальное</th>
+        <th class="align-middle text-center">Сальдо конечное</th>
+        <th class="align-middle text-center">Фамилия И.О.</th>
+        <th class="align-middle text-center">Значение А</th>
+        <th class="align-middle text-center">Значение Р</th>      
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="tr in dataForTable" >
+        <td class="align-middle text-center">{{tr.account}}</td>
+        <td class="align-middle text-center">{{tr.area_number}}</td>
+        <td class="align-middle text-center">{{ dateFormater(tr.date_a[0]) }}</td>
+        <td class="align-middle text-center">{{ dateFormater(tr.date_p[0]) }}</td>
+        <td class="align-middle text-center">{{tr.doc_a[0]}}</td>
+        <td class="align-middle text-center">{{tr.doc_p[0]}}</td>
+        <td class="align-middle text-center">{{tr.house}}</td>
+        <td class="align-middle text-center">{{tr.is_responsible}}</td>
+        <td class="align-middle text-center">{{tr.month_a[0]}}</td>
+        <td class="align-middle text-center">{{tr.month_p[0]}}</td>
+        <td class="align-middle text-center">{{tr.saldo_in}}</td>
+        <td class="align-middle text-center">{{tr.saldo_out}}</td>
+        <td class="align-middle text-center">{{tr.short_name}}</td>
+        <td class="align-middle text-center">{{tr.value_a[0]}}</td>
+        <td class="align-middle text-center">{{tr.value_p[0]}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,5 +1,10 @@
-<div ng-controller="appCtrl">
-    <div><h1>Name</h1></div>
-    <div><h1>Position</h1></div>
-    <div><h1>Company</h1></div>
-</div>
+<div>
+        <form>
+            <input type="text" id="inputTask" ng-model="tempInput"/>
+            <button ng-click="addNew()">Добавить</button>
+        </form> 
+        <div>
+            <p ng-repeat="task in tasksArray">{{task}} <button ng-click="deleteItem(task)">Удалить</button></p>
+        </div>
+        </body>
+    </div>

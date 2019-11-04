@@ -1,10 +1,10 @@
 var dir = angular.module('app.header',[]);
 
-dir.directive ('main', function () {
+dir.directive ('myheader', function () {
     return {
         restrict: 'E',
         transclude: true,
-        controller: 'firstCtrl',
+        controller: 'appHeader',
         templateUrl: 'app/components/header/header.view.html',
         replace: true
     }

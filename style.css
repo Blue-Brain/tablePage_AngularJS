@@ -1,0 +1,19 @@
+tr {
+    font-size: 12px;
+   
+}
+th {
+    font-size: 14px;
+
+}
+
+@media (max-width: 1470px) {
+    tr {
+        font-size: 10px;
+       
+    }
+    th {
+        font-size: 12px;
+    
+    }
+}
