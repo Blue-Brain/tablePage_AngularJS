@@ -1,13 +1,20 @@
 var ctrl = angular.module('app.table');
 
 ctrl.controller('appTable', function ($scope, $http) {
-    console.log("контроллер appTable сработал")
     $http.get('report1.json')
-        .success(function (data) {
-            $scope.dataForTable = data.body;
-            console.log("dataForTable: ", $scope.dataForTable)
+        .success(function (dataJSON) {
+            $scope.dataForTable = dataJSON.data.body;
         })
         .error (function (err) {
-            console.log("Data is not download ", err)
         })
+    $scope.dateFormater = function (date) {
+        if (date) { 
+            var newDate = new Date(date);
+            return `${newDate.getDate()}.${newDate.getMonth()+1}.${newDate.getFullYear()}`
+        } else return '';
+    }
+    $scope.responsible = function(data) {
+        if (data) return "Есть"; 
+        else return "Нет"
+    }
 })

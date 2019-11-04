@@ -20,21 +20,21 @@
     </thead>
     <tbody>
       <tr ng-repeat="tr in dataForTable" >
-        <td class="align-middle text-center">{{tr.account}}</td>
-        <td class="align-middle text-center">{{tr.area_number}}</td>
+        <td class="align-middle text-center">{{ tr.account }}</td>
+        <td class="align-middle text-center">{{ tr.area_number }}</td>
         <td class="align-middle text-center">{{ dateFormater(tr.date_a[0]) }}</td>
         <td class="align-middle text-center">{{ dateFormater(tr.date_p[0]) }}</td>
-        <td class="align-middle text-center">{{tr.doc_a[0]}}</td>
-        <td class="align-middle text-center">{{tr.doc_p[0]}}</td>
-        <td class="align-middle text-center">{{tr.house}}</td>
+        <td class="align-middle text-center">{{ tr.doc_a[0] }}</td>
+        <td class="align-middle text-center">{{ tr.doc_p[0] }}</td>
+        <td class="align-middle text-center">{{ tr.house }}</td>
         <td class="align-middle text-center">{{ responsible(tr.is_responsible) }}</td>
-        <td class="align-middle text-center">{{tr.month_a[0]}}</td>
-        <td class="align-middle text-center">{{tr.month_p[0]}}</td>
-        <td class="align-middle text-center">{{tr.saldo_in}}</td>
-        <td class="align-middle text-center">{{tr.saldo_out}}</td>
-        <td class="align-middle text-center">{{tr.short_name}}</td>
-        <td class="align-middle text-center">{{tr.value_a[0]}}</td>
-        <td class="align-middle text-center">{{tr.value_p[0]}}</td>
+        <td class="align-middle text-center">{{ tr.month_a[0] }}</td>
+        <td class="align-middle text-center">{{ tr.month_p[0] }}</td>
+        <td class="align-middle text-center">{{ tr.saldo_in }}р.</td>
+        <td class="align-middle text-center">{{ tr.saldo_out }}р.</td>
+        <td class="align-middle text-center">{{ tr.short_name }}</td>
+        <td class="align-middle text-center">{{ tr.value_a[0] }}</td>
+        <td class="align-middle text-center">{{ tr.value_p[0] }}</td>
       </tr>
     </tbody>
   </table>
